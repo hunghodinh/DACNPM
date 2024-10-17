@@ -18,8 +18,9 @@ public partial class TbNhanVien
     public DateTime? NgaySinh { get; set; }
 
     public bool? GioTinh { get; set; }
+	public string? ChucVu { get; set; }
 
-    public virtual ICollection<TbHopDong> TbHopDongs { get; set; } = new List<TbHopDong>();
+	public virtual ICollection<TbHopDong> TbHopDongs { get; set; } = new List<TbHopDong>();
 
     public virtual ICollection<TbTaiKhoan> TbTaiKhoans { get; set; } = new List<TbTaiKhoan>();
 }
